@@ -73,10 +73,10 @@ public class Service {
                 i + ".");
     }
 
-    public static void findNullNumber(int[] arr){
+    public static void findNullNumber(int[] arr) {
         int i = 0;
-        for (int x = 0; x < arr.length; x++){
-            if(arr[x] == 0){
+        for (int x = 0; x < arr.length; x++) {
+            if (arr[x] == 0) {
                 i++;
             }
         }
