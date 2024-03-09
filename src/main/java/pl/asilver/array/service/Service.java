@@ -1,10 +1,8 @@
 package pl.asilver.array.service;
 
-import java.lang.reflect.Array;
-
 public class Service {
 
-    public static void findEvenNumbers(int[] arr) {
+    public static void countEvenNumbers(int[] arr) {
         int i = 0;
         for (int x = 0; x < arr.length; x++) {
             if (arr[x] % 2 == 0) {
@@ -14,7 +12,7 @@ public class Service {
         System.out.println("The number of even numbers is: " + i + ".");
     }
 
-    public static void findOddNumbers(int[] arr) {
+    public static void countOddNumbers(int[] arr) {
         int i = 0;
         for (int x = 0; x < arr.length; x++) {
             if (arr[x] % 2 != 0) {
@@ -36,7 +34,7 @@ public class Service {
         return true;
     }
 
-    public static void findPrimeNumbers(int[] arr) {
+    public static void countPrimeNumbers(int[] arr) {
         int i = 0;
         for (int num : arr) {
             if (isPrime(num)) {
@@ -73,13 +71,13 @@ public class Service {
                 i + ".");
     }
 
-    public static void findNullNumber(int[] arr) {
+    public static void countZeroNumbers(int[] arr) {
         int i = 0;
         for (int x = 0; x < arr.length; x++) {
             if (arr[x] == 0) {
                 i++;
             }
         }
-        System.out.println("The number of nulls is: " + i + ".");
+        System.out.println("The number of zeros is: " + i + ".");
     }
 }
