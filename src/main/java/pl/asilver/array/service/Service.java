@@ -67,7 +67,7 @@ public class Service {
             }
         }
         i = e - o;
-        System.out.println("The difference sum of numbers with even and odd indexes is: " +
+        System.out.println("The difference of sum of numbers with even and odd indexes is: " +
                 i + ".");
     }
 
