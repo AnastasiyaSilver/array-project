@@ -1,5 +1,7 @@
 package pl.asilver.array.service;
 
+import java.util.Arrays;
+
 public class Service {
 
     public static void countEvenNumbers(int[] arr) {
@@ -79,5 +81,21 @@ public class Service {
             }
         }
         System.out.println("The number of zeros is: " + i + ".");
+    }
+
+    public static void sortArray(int[] array) {
+        for (int x = 0; x < array.length - 1; x++) {
+            for (int i = 0; i < array.length - x - 1; i++) {
+                if (array[i] > array[i + 1]) {
+                    int temp = array[i];
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
+                }
+            }
+        }
+        System.out.print("Sorted array: ");
+        for (int y = 0; y < array.length; y++) {
+            System.out.print(" " + array[y]);
+        }
     }
 }
